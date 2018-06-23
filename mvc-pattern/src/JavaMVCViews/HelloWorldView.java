@@ -1,8 +1,9 @@
 package JavaMVCViews;
 
 import JavaMVCControllers.*;
+import javax.swing.*;
 
-public class HelloWorldView {
+public class HelloWorldView extends JFrame {
     // Create the class for the Controller
     private HelloWorldController controller = new HelloWorldController();
 
@@ -22,11 +23,11 @@ public class HelloWorldView {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        myLabel = new javax.swing.JLabel();
-        loadData = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        myMessage = new javax.swing.JTextArea();
-        writeData = new javax.swing.JButton();
+        myLabel = new JLabel();
+        loadData = new JButton();
+        jScrollPane1 = new JScrollPane();
+        myMessage = new JTextArea();
+        writeData = new JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -144,10 +145,10 @@ public class HelloWorldView {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JButton loadData;
-    public javax.swing.JLabel myLabel;
-    private javax.swing.JTextArea myMessage;
-    private javax.swing.JButton writeData;
+    private JScrollPane jScrollPane1;
+    private JButton loadData;
+    public JLabel myLabel;
+    private JTextArea myMessage;
+    private JButton writeData;
     // End of variables declaration//GEN-END:variables
 }
