@@ -7,15 +7,15 @@ import java.nio.file.Paths;
 public class HelloWorldModel {
     public String getData() throws FileNotFoundException, IOException {
 
-        if(!(new File("/Users/jarom/Documents/file.txt").isFile())) {
+        if(!(new File("../../file.txt").isFile())) {
             // Create -- Make sure file exists -- the file before continuing
-            Files.createFile(Paths.get("/Users/jarom/Documents/file.txt"));
+            Files.createFile(Paths.get("../../file.txt"));
         }
 
         String data;
         // We will be using a try-with-resource block
         try (BufferedReader reader = new BufferedReader(
-                new FileReader("/Users/jarom/Documents/file.txt"))) {
+                new FileReader("../../file.txt"))) {
             // Access the data from the file
             // Create a new StringBuilder
             StringBuilder string = new StringBuilder();
@@ -46,7 +46,7 @@ public class HelloWorldModel {
     {
         // Save the data to the File
         try (BufferedWriter writer = new BufferedWriter(
-                new FileWriter("/Users/jarom/Documents/file.txt"))) {
+                new FileWriter("../../file.txt"))) {
             // Write the data to the File
             writer.write(data);
             // Return indicating the data was written
