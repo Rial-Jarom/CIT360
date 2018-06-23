@@ -30,8 +30,7 @@ public class MyFirstTest {
     }
     @Test
     public void assertNullTest() {
-        HelloJava helloJava = new HelloJava();
-        assertNull(helloJava);
+        assertNull("should be null", null);
     }
     @Test
     public void assertSameTest() {
@@ -40,8 +39,7 @@ public class MyFirstTest {
     }
     @Test
     public void assertThatTest() {
-        HelloJava helloJava = new HelloJava();
-        assertThat(helloJava, equalTo(helloJava));
+        assertThat("albumen", both(containsString("a")).and(containsString("b")));
     }
     @Test
     public void assertTrueTest() {
